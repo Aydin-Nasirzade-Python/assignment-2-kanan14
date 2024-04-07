@@ -3,7 +3,7 @@
 def main():
   a=input("Enter a month [ex. March]: ")
   b=int(input("Enter the day [ex. 12]: "))
-  if (1<=a<=31) and (b=="Januray" or b=="February" or b=="March" or b=="April" or b=="May" or b=="June" or b=="July" or b=="August" or b=="September" or b=="October" or b=="November" or b=="December":
+  if (1<=a<=31) or (b=="Januray" or b=="February" or b=="March" or b=="April" or b=="May" or b=="June" or b=="July" or b=="August" or b=="September" or b=="October" or b=="November" or b=="December":
     if (a=="December" and b>=22) or (a=="January" and b<=19):
       print("Your zodiac sign is Capricorn")
     elif (a=="January" and b>=20) or (a=="February" and b<=18):
