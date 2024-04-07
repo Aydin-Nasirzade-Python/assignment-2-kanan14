@@ -1,33 +1,36 @@
 #import libraries here
 
 def main():
-  a=input("Enter a month [ex. March]: ")
-  b=int(input("Enter the day [ex. 12]: "))
-  if (1<=a<=31) or (b=="Januray" or b=="February" or b=="March" or b=="April" or b=="May" or b=="June" or b=="July" or b=="August" or b=="September" or b=="October" or b=="November" or b=="December":
-    if (a=="December" and b>=22) or (a=="January" and b<=19):
-      print("Your zodiac sign is Capricorn")
-    elif (a=="January" and b>=20) or (a=="February" and b<=18):
-      print("Your zodiac sign is Aquarius")
-    elif (a=="February" and b>=19) or (a=="March" and b<=20):
-      print("Your zodiac sign is Pisces")
-    elif (a=="March" and b>=21) or (a=="April" and b<=19):
-      print("Your zodiac sign is Aries")
-    elif  (a=="April" and b>=20) or (a=="May" and b<=20):
-      print("Your zodiac sign is Taurus")
-    elif (a=="May" and b>=21) or (a=="June" and b<=20):
-      print("Your zodiac sign is Gemini")
-    elif (a=="June" and b>=21) or (a=="July" and b<=22):
-      print("Your zodiac sign is Cancer")
-    elif (a=="July" and b>=23) or (a=="August" and b<=22):
-      print("Your zodiac sign is Leo")
-    elif (a=="August" and b>=23) or (a=="September" and b<=22):
-      print("Your zodiac sign is Virgo")
-    elif (a=="September" and b>=23) or (a=="October" and b<=22):
-      print("Your zodiac sign is Libra")
-    elif (a=="October" and b>=23) or (a=="November" and b<=21):
-      print("Your zodiac sign is Scorpion")
-    elif (a=="November" and b>=22) or (a=="December" and b<=21):
-      print("Your zodiac sign is Sagittarius")
+   month = input("Enter a month [ex. March]: ")
+
+   day = int(input("Enter the day [ex. 12]: "))
+
+   if month == "December" and day >= 22 and day <= 31 or month == "January" and day <= 19 and day >= 1:
+     print("Your zodiac sign is Capricorn")
+   elif month == "January" and day >= 20 and day <= 31 or month == "February" and day <= 18 and day >= 1:
+     print("Your zodiac sign is Aquarius")
+   elif month == "February" and day >= 19 and day <= 29 or month == "March" and day <= 20 and day >= 1:
+     print("Your zodiac sign is Pisces")
+   elif month == "March" and day >= 21 and day <= 31 or month == "April" and day <= 19 and day >= 1:
+     print("Your zodiac sign is Aries")
+   elif month == "April" and day >= 20 and day <= 30 or month == "May" and day <= 20 and day >= 1:
+     print("Your zodiac sign is Taurus")
+   elif month == "May" and day >= 21 and day <= 31 or month == "June" and day <= 20 and day >= 1:
+     print("Your zodiac sign is Gemini")
+   elif month == "June" and day >= 21 and day <= 30 or month == "July" and day <= 22 and day >= 1:
+     print("Your zodiac sign is Cancer")
+   elif month == "July" and day >= 23 and day <= 31 or month == "August" and day <= 22 and day >= 1:
+     print("Your zodiac sign is Leo")
+   elif month == "August" and day >= 23 and day <= 31 or month == "September" and day <= 22 and day >= 1:
+     print("Your zodiac sign is Virgo")
+   elif month == "September" and day >= 23 and day <= 30 or month == "October" and day <= 22 and day >= 1:
+     print("Your zodiac sign is Libra")
+   elif month == "October" and day >= 23 and day <= 31 or month == "November" and day <= 21 and day >= 1:
+     print("Your zodiac sign is Scorpion")
+   elif month == "November" and day >= 22 and day <= 30 or month == "December" and day <= 21 and day >= 1:
+     print("Your zodiac sign is Sagittarius")
+   else:
+     print("Either a month or a day is invalid!")
   pass
 
 if __name__ == "__main__":
